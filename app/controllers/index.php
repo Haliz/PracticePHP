@@ -1,6 +1,5 @@
 <?php
-const MYAPP = true;
-require 'funcs.php';
+
 $title = 'My Blog :: Home';
 $posts = [
     1 => [
@@ -51,6 +50,6 @@ $recent_posts = [
         'slug' => lcfirst(str_ireplace(' ', '-', 'And a fifth one'))
     ],
 ];
-require_once 'app/views/index.tpl.php';
+require_once VIEWS.'/index.tpl.php';
 
 

@@ -1,7 +1,7 @@
 <?php
 
-require 'app/views/incs/header.php' ?>
-<?php dump($posts); ?>
+require VIEWS.'/incs/header.php' ?>
+<?php //dump($posts); ?><!-- -->
     <main class="main py-3">
         <div class="container">
             <div class="row">
@@ -16,12 +16,12 @@ require 'app/views/incs/header.php' ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
-                <?php require 'app/views/incs/sidebar.php' ?>
+                <?php require VIEWS.'/incs/sidebar.php' ?>
             </div>
         </div>
     </main>
 
-<?php require 'app/views/incs/footer.php' ?>
+<?php require VIEWS.'/incs/footer.php' ?>
 </div>
 
 

@@ -1,6 +1,4 @@
-<?php
-defined("MYAPP") or die('BOO');
-?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +8,7 @@ defined("MYAPP") or die('BOO');
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?= $title ?? 'TITLE' ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../assets/main.css">
+    <link rel="stylesheet" href="../../../public/assets/main.css">
 </head>
 <body>
 <div class="wrapper">
@@ -29,7 +27,7 @@ defined("MYAPP") or die('BOO');
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../../about.php">About</a>
+                            <a class="nav-link" href="../../controllers/about.php">About</a>
                         </li>
                 </div>
             </div>

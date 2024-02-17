@@ -1,5 +1,4 @@
 <?php
-defined("MYAPP") or die('BOO');
 function dump($data)
 {
     echo '<pre>';
