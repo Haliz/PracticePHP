@@ -1,5 +1,5 @@
 <?php
-require 'funcs.php';
+
 $title = 'My Blog :: About';
 $posts = '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi, earum facilis fuga iste
                         magnam nobis sequi vitae. A aperiam ducimus eligendi necessitatibus numquam odit officia 
@@ -32,4 +32,4 @@ $recent_posts = [
 'slug' => lcfirst(str_ireplace(' ', '-', 'And a fifth one'))
 ],
 ];
-require_once 'app/views/about.tpl.php';
+require_once VIEWS.'/about.tpl.php';

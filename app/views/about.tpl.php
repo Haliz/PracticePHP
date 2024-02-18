@@ -1,7 +1,7 @@
 
 <?php
 
-require 'app/views/incs/header.php' ?>
+require VIEWS.'/incs/header.php' ?>
 
     <main class="main py-3">
         <div class="container">
@@ -17,15 +17,9 @@ require 'app/views/incs/header.php' ?>
                         magnam nobis sequi vitae. A aperiam ducimus eligendi necessitatibus numquam odit officia
                         similique temporibus voluptatem. Eligendi?</p>
                 </div>
-                <?php require 'app/views/incs/sidebar.php' ?>
+                <?php require VIEWS. '/incs/sidebar.php' ?>
             </div>
         </div>
     </main>
 
-<?php require 'app/views/incs/footer.php' ?>
-</div>
-
-
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php require VIEWS .'/incs/footer.php' ?>
