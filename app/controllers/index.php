@@ -1,7 +1,9 @@
 <?php
 
 $title = 'My Blog :: Home';
-$posts = [
+$posts = $db ->query("select * from posts order by id desc ")->fetchAll();
+$recent_posts = $db ->query("select * from posts order by id desc limit 3")->fetchAll();
+/*$posts = [
     1 => [
         'title' => 'Title 1',
         'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
@@ -27,8 +29,8 @@ $posts = [
         'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
         'slug' => 'title-5',
     ],
-];
-$recent_posts = [
+];*/
+/*$recent_posts = [
     1 => [
         'title' => 'An item',
         'slug' => lcfirst(str_ireplace(' ', '-', 'An item'))
@@ -49,7 +51,7 @@ $recent_posts = [
         'title' => 'And a fifth one',
         'slug' => lcfirst(str_ireplace(' ', '-', 'And a fifth one'))
     ],
-];
+];*/
 require_once VIEWS.'/index.tpl.php';
 
 
