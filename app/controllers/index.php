@@ -1,57 +1,11 @@
 <?php
-
+/**
+* @var Db $db
+ */
 $title = 'My Blog :: Home';
-$posts = $db ->query("select * from posts order by id desc ")->fetchAll();
-$recent_posts = $db ->query("select * from posts order by id desc limit 3")->fetchAll();
-/*$posts = [
-    1 => [
-        'title' => 'Title 1',
-        'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        'slug' => 'title-1',
-    ],
-    2 => [
-        'title' => 'Title 2',
-        'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        'slug' => 'title-2',
-    ],
-    3 => [
-        'title' => 'Title 3',
-        'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        'slug' => 'title-3',
-    ],
-    4 => [
-        'title' => 'Title 4',
-        'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        'slug' => 'title-4',
-    ],
-    5 => [
-        'title' => 'Title 5',
-        'desc' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        'slug' => 'title-5',
-    ],
-];*/
-/*$recent_posts = [
-    1 => [
-        'title' => 'An item',
-        'slug' => lcfirst(str_ireplace(' ', '-', 'An item'))
-    ],
-    2 => [
-        'title' => 'A second item',
-        'slug' => lcfirst(str_ireplace(' ', '-', 'A second item'))
-    ],
-    3 => [
-        'title' => 'A third item',
-        'slug' => lcfirst(str_ireplace(' ', '-', 'A third item'))
-    ],
-    4 => [
-        'title' => 'A fourth item',
-        'slug' => lcfirst(str_ireplace(' ', '-', 'A fourth item'))
-    ],
-    5 => [
-        'title' => 'And a fifth one',
-        'slug' => lcfirst(str_ireplace(' ', '-', 'And a fifth one'))
-    ],
-];*/
+$posts = $db ->query("select * from posts order by id desc ")->findAll();
+$recent_posts = $db ->query("select * from posts order by id desc limit 3")->findAll();
+
 require_once VIEWS.'/index.tpl.php';
 
 
