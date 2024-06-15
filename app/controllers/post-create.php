@@ -1,4 +1,8 @@
 <?php
+
+use myfrm\Db;
+use myfrm\Validator;
+
 require_once CORE . '/classes/Validator.php';
 /**
  * @var Db $db
